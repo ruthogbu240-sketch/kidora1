@@ -1,0 +1,221 @@
+/* Components - Modern & Warm */
+.role-cards-grid,
+.testimonials-grid,
+.steps-grid,
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Role cards */
+.role-card {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.role-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-light));
+}
+.role-card:nth-child(2)::before {
+  background: linear-gradient(90deg, var(--secondary), var(--secondary-light));
+}
+.role-card:nth-child(3)::before {
+  background: linear-gradient(90deg, var(--accent), #FFE08C);
+}
+.role-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Step cards */
+.step-card {
+  text-align: center;
+  padding: 2rem;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  transition: var(--transition);
+}
+.step-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 0 auto 1.5rem;
+}
+
+/* Testimonials */
+.testimonial-card {
+  position: relative;
+  padding: 2rem;
+}
+.testimonial-card .quote {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+.testimonial-card .quote::before {
+  content: "“";
+  font-size: 3rem;
+  color: var(--primary);
+  line-height: 0;
+  vertical-align: sub;
+  margin-right: 0.25rem;
+}
+.author {
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: 1rem;
+}
+
+/* Feature cards */
+.feature-card {
+  text-align: left;
+}
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+.feature-icon.primary { color: var(--primary); }
+.feature-icon.secondary { color: var(--secondary); }
+.feature-icon.accent { color: var(--accent); }
+
+/* Value cards */
+.value-card, .team-card {
+  text-align: center;
+}
+.value-icon, .team-icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+  color: white;
+  font-size: 1.75rem;
+}
+.team-icon.secondary {
+  background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+}
+.value-card h3, .team-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Impact cards */
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+.impact-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.impact-number.secondary { color: var(--secondary); }
+.impact-number.accent { color: var(--accent); }
+
+/* CTA section */
+.about-cta {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  border-radius: var(--radius);
+  text-align: center;
+  padding: 3rem;
+}
+.cta-title { color: white; }
+.cta-text { color: rgba(255,255,255,0.9); }
+
+/* FAQ */
+.faq-card {
+  margin-bottom: 1rem;
+}
+.faq-question {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+.faq-answer {
+  margin-left: 1.5rem;
+  color: var(--text-muted);
+}
+
+/* Dashboard components (specific) */
+.dashboard-banner {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+.dashboard-banner h3, .dashboard-banner p {
+  color: white;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 40px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Progress bar */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--primary-light));
+  border-radius: 4px;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+/* Emotion card specific */
+.card-emotion .hidden-message {
+  background: rgba(78,156,175,0.1);
+  border-left: 4px solid var(--primary);
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.card-awareness .action-tip {
+  background: rgba(255,155,133,0.1);
+  border-left: 4px solid var(--secondary);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-top: 1rem;
+}

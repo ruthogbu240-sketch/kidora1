@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidora1 | One Light, One Community</title>
+    <meta name="description" content="Kidora1 - An interactive child nurturing and family empowerment web application.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <h1>KIDORA<span>1</span></h1>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-secondary">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <button class="auth-menu-toggle" id="authMenuToggle" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="auth-menu" id="authMenu">
+                <nav class="mobile-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <hr class="menu-divider">
+                <div class="mobile-auth">
+                    <a href="login.html" class="btn btn-secondary">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h2>Lighting the Path for Children, Parents & the Forgotten</h2>
+                <p>One Light, One Community, Support for All. Join the movement to empower families and nurture the
+                    future.</p>
+                <a href="signup.html" class="btn btn-primary">Get Started</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+            <!-- Placeholder for Hero Image - To be added -->
+            <div class="hero-visual">
+                <div class="circle-bg">
+                    <img src="/images/undraw_family_6gj8.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Preview -->
+    <section id="features" class="section padding-top-80">
+        <div class="container">
+            <h2 class="text-center">Who We Serve</h2>
+            <div class="role-cards-grid">
+                <div class="card role-card">
+                    <h3>For Parents</h3>
+                    <p>Master parenting skills, understand child emotions, and access a supportive community.</p>
+                </div>
+                <div class="card role-card">
+                    <h3>For Children</h3>
+                    <p>A safe space to learn, grow, and feel valued by the community.</p>
+                </div>
+                <div class="card role-card">
+                    <h3>For Community</h3>
+                    <p>Make a real impact. Donate, volunteer, and support vulnerable kids.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center">How Kidora1 Works</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-icon">01</div>
+                    <h3>Sign Up</h3>
+                    <p>Create your profile as a parent, donor, or volunteer to get started.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">02</div>
+                    <h3>Learn & Engage</h3>
+                    <p>Access modules, try the simulator, or support an event.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">03</div>
+                    <h3>Grow Together</h3>
+                    <p>Track progress, see your impact, and build a stronger family.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Voices -->
+    <section id="community" class="section">
+        <div class="container">
+            <h2 class="text-center">Community Voices</h2>
+            <div class="testimonials-grid">
+                <div class="card testimonial-card">
+                    <p class="quote">"Kidora1 changed how I talk to my teenage son. We actually have conversations now
+                        instead of arguments."</p>
+                    <div class="author">- Mrs. Adebayo, Parent</div>
+                </div>
+                <div class="card testimonial-card">
+                    <p class="quote">"Seeing the impact of my small monthly donation on these families is incredibly
+                        rewarding."</p>
+                    <div class="author">- John Doe, Donor</div>
+                </div>
+                <div class="card testimonial-card">
+                    <p class="quote">"The mentorship program is fantastic. I've seen shy kids blossom into confident
+                        leaders."</p>
+                    <div class="author">- Sarah J., Volunteer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>About Kidora1</h4>
+                <p>One Light, One Community. We're dedicated to empowering families and nurturing the future through
+                    education, support, and compassion.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Get Started</h4>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="#">Become a Donor</a></li>
+                    <li><a href="#">Join as Volunteer</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+                    <li><a href="https://facebook.com/kidora1" target="_blank" title="Facebook"><i
+                                class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com/kidora1" target="_blank" title="Twitter"><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com/kidora1" target="_blank" title="Instagram"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://linkedin.com/company/kidora1" target="_blank" title="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kidora1. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+    <script type="module" src="js/main.js"></script>
+
+   
+
+        <script type="module">
+    async function loadTestimonials() {
+        try {
+            const res = await fetch('api/data.php?type=testimonials');
+            const data = await res.json();
+            if (data.success && data.data.length) {
+                const container = document.querySelector('.testimonials-grid');
+                if (container) {
+                    container.innerHTML = data.data.map(t => `
+                        <div class="card testimonial-card">
+                            <p class="quote">${t.quote}</p>
+                            <div class="author">- ${t.name}, ${t.role || 'Community Member'}</div>
+                        </div>
+                    `).join('');
+                }
+            }
+        } catch (e) { console.error('Failed to load testimonials', e); }
+    }
+    loadTestimonials();
+</script>
+   
+</body>
+
+</html>

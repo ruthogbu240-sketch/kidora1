@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kidora1 | One Light, One Community</title>
+    <meta name="description"
+        content="Get in touch with Kidora1. We'd love to hear from you about partnerships, feedback, or general inquiries.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <h1>KIDORA<span>1</span></h1>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-secondary">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+            <button class="auth-menu-toggle" id="authMenuToggle" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="auth-menu" id="authMenu">
+                <nav class="mobile-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <hr class="menu-divider">
+                <div class="mobile-auth">
+                    <a href="login.html" class="btn btn-secondary">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="hero contact-hero">
+        <div class="container hero-content">
+            <div class="hero-text text-center">
+                <h2>Get In Touch</h2>
+                <p class="hero-subtitle">We'd love to hear from you. Reach out with questions, feedback, or partnership
+                    opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid-2 contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2 class="section-title">Send us a Message</h2>
+                    <form id="contact-form" class="modern-form">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="John Doe"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control"
+                                placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="+234...">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" class="form-control" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="volunteer">Volunteer Interest</option>
+                                <option value="donation">Donation Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" class="form-control" rows="6"
+                                placeholder="How can we help?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="card info-card">
+                        <h3 class="info-title primary">
+                            <i class="fa-solid fa-map-marker-alt"></i> Location
+                        </h3>
+                        <p>
+                            Kidora1 Global Headquarters<br>
+                            123 Community Street<br>
+                            Lagos, Nigeria<br>
+                            +234 (0) 123-456-7890
+                        </p>
+                    </div>
+
+                    <div class="card info-card">
+                        <h3 class="info-title secondary">
+                            <i class="fa-solid fa-envelope"></i> Email
+                        </h3>
+                        <div class="email-links">
+                            <p><strong>General:</strong> <a href="mailto:hello@kidora1.com">hello@kidora1.com</a></p>
+                            <p><strong>Support:</strong> <a href="mailto:support@kidora1.com">support@kidora1.com</a>
+                            </p>
+                            <p><strong>Partnerships:</strong> <a
+                                    href="mailto:partnerships@kidora1.com">partnerships@kidora1.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="card info-card">
+                        <h3 class="info-title accent">
+                            <i class="fa-solid fa-clock"></i> Business Hours
+                        </h3>
+                        <ul class="hours-list">
+                            <li><strong>Mon - Fri:</strong> 9:00 AM - 6:00 PM WAT</li>
+                            <li><strong>Saturday:</strong> 10:00 AM - 4:00 PM WAT</li>
+                            <li><strong>Sunday:</strong> Closed</li>
+                        </ul>
+                    </div>
+
+                    <div class="card info-card">
+                        <h3><i class="fa-solid fa-share-alt"></i> Follow Us</h3>
+                        <ul class="social-links contact-social">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="card faq-card">
+                    <h4 class="faq-question">
+                        <i class="fa-solid fa-chevron-right"></i> How do I get started with Kidora1?
+                    </h4>
+                    <p class="faq-answer">
+                        Simply click "Sign Up" on our homepage and create your account. Choose your role (parent, child,
+                        volunteer, or donor) and start your journey with us.
+                    </p>
+                </div>
+
+                <div class="card faq-card">
+                    <h4 class="faq-question">
+                        <i class="fa-solid fa-chevron-right"></i> Is my personal information secure?
+                    </h4>
+                    <p class="faq-answer">
+                        Yes, we use enterprise-grade encryption to protect your data. We never share personal
+                        information without your consent and comply with all data protection regulations.
+                    </p>
+                </div>
+
+                <div class="card faq-card">
+                    <h4 class="faq-question">
+                        <i class="fa-solid fa-chevron-right"></i> Do you offer a free trial?
+                    </h4>
+                    <p class="faq-answer">
+                        Yes! All basic features are available for free. Premium features require a subscription. Contact
+                        us to learn more about our pricing plans.
+                    </p>
+                </div>
+
+                <div class="card faq-card">
+                    <h4 class="faq-question">
+                        <i class="fa-solid fa-chevron-right"></i> How can I become a volunteer?
+                    </h4>
+                    <p class="faq-answer">
+                        Sign up on our platform and select the "Volunteer" role. You'll be guided through our volunteer
+                        onboarding process where you can specify your interests and availability.
+                    </p>
+                </div>
+
+                <div class="card faq-card">
+                    <h4 class="faq-question">
+                        <i class="fa-solid fa-chevron-right"></i> How can I make a donation?
+                    </h4>
+                    <p class="faq-answer">
+                        Log into your Kidora1 account and visit the "Donations" section. Choose a program or family
+                        you'd like to support and complete your secure transaction.
+                    </p>
+                </div>
+
+                <div class="card faq-card">
+                    <h4 class="faq-question">
+                        <i class="fa-solid fa-chevron-right"></i> Do you offer support in multiple languages?
+                    </h4>
+                    <p class="faq-answer">
+                        Currently, we support English, Yoruba, and Hausa. We're expanding language support regularly.
+                        Contact us if you need support in another language.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>About Kidora1</h4>
+                <p>One Light, One Community. We're dedicated to empowering families and nurturing the future through
+                    education, support, and compassion.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Get Started</h4>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="#">Become a Donor</a></li>
+                    <li><a href="#">Join as Volunteer</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+                    <li><a href="https://facebook.com/kidora1" target="_blank" title="Facebook"><i
+                                class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com/kidora1" target="_blank" title="Twitter"><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com/kidora1" target="_blank" title="Instagram"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://linkedin.com/company/kidora1" target="_blank" title="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kidora1. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

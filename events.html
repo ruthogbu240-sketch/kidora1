@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events - Kidora1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <style>
+        .event-card {
+            border-left: 6px solid var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .event-date {
+            background: var(--primary-light);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .awareness-block {
+            background: linear-gradient(135deg, var(--secondary-color), var(--secondary-dark));
+            color: white;
+            padding: 40px;
+            border-radius: var(--border-radius-lg);
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <h1>KIDORA<span>1</span></h1>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-secondary">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="text-center">Upcoming Events & Workshops</h1>
+            <p class="text-center" style="max-width: 600px; margin: 0 auto 50px;">Join our community in person or online
+                to learn more about nurturing the next generation.</p>
+
+            <div class="grid-2">
+                <div class="card event-card">
+                    <span class="event-date">MARCH 15, 2026</span>
+                    <h3 style="margin-top: 15px;">Parenting in the Digital Age</h3>
+                    <p>A workshop on managing screen time and protecting your children online.</p>
+                    <div style="margin-top: 10px; color: var(--text-muted);">
+                        <i class="fa-solid fa-map-marker-alt"></i> Online (Zoom) • 6:00 PM WAT
+                    </div>
+                    <button class="btn btn-primary" style="margin-top: 20px;">Register Now</button>
+                </div>
+
+                <div class="card event-card" style="border-color: var(--secondary-color);">
+                    <span class="event-date" style="background: var(--secondary-color);">APRIL 02, 2026</span>
+                    <h3 style="margin-top: 15px;">Mental Health First Aid for Kids</h3>
+                    <p>Learn to spot early signs of anxiety and depression in young children.</p>
+                    <div style="margin-top: 10px; color: var(--text-muted);">
+                        <i class="fa-solid fa-map-marker-alt"></i> Lagos Community Center • 10:00 AM WAT
+                    </div>
+                    <button class="btn btn-secondary" style="margin-top: 20px;">Save My Spot</button>
+                </div>
+            </div>
+
+            <!-- Awareness Block -->
+            <div class="awareness-block">
+                <h2 style="color: white; margin-bottom: 15px;">Every Child Deserves a Safe Harbor</h2>
+                <p style="color: rgba(255, 255, 255, 0.9); max-width: 700px; margin: 0 auto 25px;">Child welfare is not
+                    just a government responsibility; it's a community duty. Learn how to identify signs of neglect and
+                    how you can support vulnerable families in your area.</p>
+                <div style="display: flex; gap: 15px; justify-content: center;">
+                    <a href="#" class="btn btn-white">Learn More</a>
+                    <a href="contact.html" class="btn btn-outline-white">Report a Concern</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>Kidora1</h4>
+                <p>Nurturing minds, building futures.</p>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2026 Kidora1. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

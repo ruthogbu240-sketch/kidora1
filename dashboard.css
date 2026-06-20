@@ -1,0 +1,227 @@
+/* Dashboard - Premium SaaS Style */
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar - Dark Teal */
+.sidebar {
+  width: 280px;
+  background: #1A3B45;
+  color: white;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  z-index: 100;
+}
+.sidebar-header h2 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.sidebar-header span {
+  color: var(--primary-light);
+}
+.sidebar-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 16px;
+  color: rgba(255,255,255,0.8);
+  transition: all 0.2s;
+}
+.sidebar-nav a:hover {
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+.sidebar-nav li.active a {
+  background: rgba(255,255,255,0.15);
+  color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.5);
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  margin-left: 280px;
+  background: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Bar - Glass */
+.top-bar {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(12px);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  z-index: 50;
+}
+.top-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text);
+}
+.top-bar-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+.breadcrumb {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.user-info {
+  text-align: right;
+}
+.user-info .name {
+  font-weight: 600;
+}
+.avatar-placeholder {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+.notification-bell {
+  position: relative;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.notification-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--secondary);
+  color: white;
+  border-radius: 20px;
+  padding: 0 5px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  display: none;
+}
+
+/* Content Area */
+.content-area {
+  padding: 2rem;
+  flex: 1;
+}
+
+/* Modules Grid */
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+.module-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: var(--transition);
+  border: 1px solid var(--border);
+}
+.module-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+/* Simulator */
+.simulator-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+}
+.simulator-options {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.outcome-display {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: var(--radius);
+  animation: fadeIn 0.3s;
+}
+.outcome-positive {
+  background: rgba(6, 214, 160, 0.1);
+  border-left: 4px solid #06D6A0;
+}
+.outcome-negative {
+  background: rgba(239, 71, 111, 0.1);
+  border-left: 4px solid #EF476F;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    width: 260px;
+  }
+  .sidebar.mobile-open {
+    transform: translateX(0);
+  }
+  .main-content {
+    margin-left: 0;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .top-bar {
+    padding: 0.75rem 1rem;
+  }
+  .content-area {
+    padding: 1rem;
+  }
+  .user-info {
+    display: none;
+  }
+  .simulator-options {
+    flex-direction: column;
+  }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
